@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_app2_app2t_domain_security_AppRoleMenu" items="${approlemenus}" z="gc/4PfWdSX+WJjIqYEDTxrzk7/c=">
+        <table:table data="${approlemenus}" id="l_com_app2_app2t_domain_security_AppRoleMenu" path="/approlemenus" z="NoXP+a9dWR/tQCXPHwmaWS5SX7U=">
+            <table:column id="c_com_app2_app2t_domain_security_AppRoleMenu_createdBy" property="createdBy" z="F5YuxgXeJ0Tc4eHMZO4GxxA4z3A="/>
+            <table:column id="c_com_app2_app2t_domain_security_AppRoleMenu_updatedBy" property="updatedBy" z="m5KwLR9u8UsN2k1rEuXoq6b1cgg="/>
+            <table:column id="c_com_app2_app2t_domain_security_AppRoleMenu_status" property="status" z="B0NfmSe0YZ9YD99EYv7FFeU3byg="/>
+            <table:column date="true" dateTimePattern="${appRoleMenu_createddate_date_format}" id="c_com_app2_app2t_domain_security_AppRoleMenu_createdDate" property="createdDate" z="OPBCdFGrltmudp7aN3BhqSGXmV0="/>
+            <table:column date="true" dateTimePattern="${appRoleMenu_updateddate_date_format}" id="c_com_app2_app2t_domain_security_AppRoleMenu_updatedDate" property="updatedDate" z="5aPLvEsyte+fZZsADyLJX9nOeOo="/>
+            <table:column id="c_com_app2_app2t_domain_security_AppRoleMenu_appRole" property="appRole" z="vRbIKf9RkvXVjd4GW6ZesEBAgJo="/>
+        </table:table>
+    </page:list>
+</div>

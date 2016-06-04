@@ -1,0 +1,67 @@
+<div id="header" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+
+  <spring:url var="banner" value="/resources/images/banner-graphic.png" />
+  <spring:url var="img_lang_en" value="/resources/images/ess-lang-en.png"/>
+  <spring:url var="img_lang_th" value="/resources/images/ess-lang-th.png"/>
+  <spring:url var="home" value="/" />
+  <spring:message code="button_home" var="home_label" htmlEscape="false" />
+
+    <c:set var="lang" value="${fn:toUpperCase(pageContext.response.locale)}" scope="request"/>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-expand-toggle">
+                    <i class="fa fa-bars icon"><jsp:text/></i>
+                </button>
+                <ol class="breadcrumb navbar-breadcrumb">
+                    <li class="active">Plan</li>
+                </ol>
+                <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                    <i class="fa fa-th icon"><jsp:text/></i>
+                </button>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                    <i class="fa fa-times icon"><!--  --></i>
+                </button>
+                <li class="dropdown profile">
+                    <a href="#" id="loginNameDropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><jsp:text/> <span class="caret"><jsp:text/></span></a>
+                    <ul class="dropdown-menu animated fadeInDown">
+                        <li>
+                            <div class="profile-info">
+                                <h4 id="loginName" class="username"><jsp:text/> </h4>
+                                <p id="loginEmail"><jsp:text/> </p>
+                                <div class="btn-group margin-bottom-2x" role="group">
+                                    <!-- <button type="button" class="btn btn-default"><i class="fa fa-user"><jsp:text/></i> Profile</button> -->
+                                    <button id="btnLogout" type="button" class="btn btn-default"><i class="fa fa-sign-out"><jsp:text/></i> Logout</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <util:language label="English" locale="en"/>
+                </li>
+                <li class="dropdown">
+                    <util:language label="Thai" locale="th"/>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="wait" class="modal-backdrop" style="opacity: 0;">
+    </div>
+    <spring:url var="img" value="/resources/images/loader.gif" />
+    <script>
+        var pathImgLoading = '${img}';
+        var contextPath = '${pageContext.request.contextPath}';
+        commonData.language = '${lang}';
+        if(commonData.language == 'TH_TH')
+            commonData.language = 'TH';
+    </script>
+    
+    <spring:url value="/resources/scripts/header/header.js" var="header_js_url"/>
+    <script src="${header_js_url}" type="text/javascript"><!--Not Empty --></script>
+</div>

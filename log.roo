@@ -1,0 +1,85 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2016-02-21 21:46:37
+project --topLevelPackage com.app2.app2t --projectName APP2_Security --java 7
+persistence setup --provider HIBERNATE --database DERBY_EMBEDDED
+entity jpa --class ~base.BaseEntity --abstract --mappedSuperclass --activeRecord
+field string createdBy
+field string updatedBy
+field string status
+field date --fieldName createdDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field date --fieldName updatedDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+entity jpa --class ~.domain.security.AppRole --extends ~.base.BaseEntity --testAutomatically --inheritanceType TABLE_PER_CLASS
+field string --fieldName RoleName
+json all 
+json all --deepSerialize 
+web mvc setup
+web mvc all --package ~.web.security
+web mvc json all 
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2016-02-21 21:47:10
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2559-02-23 16:25:32
+focus --class ~.domain.security.AppRole
+field string --fieldName roleCode
+entity jpa --class ~.domain.security.AppMenu --extends ~.base.BaseEntity --testAutomatically --inheritanceType TABLE_PER_CLASS
+field string --fieldName link
+field string --fieldName controller
+field number --type java.lang.Integer --fieldName menuLevel
+field number --type java.lang.Integer --fieldName segment
+field number --type java.lang.Long --fieldName parent
+field string --fieldName menu_t_name
+field string --fieldName menu_e_name
+// [failed] focus --class ~.domain.security
+// [failed] focus --class ~.domain
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-02-23 16:32:36
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2559-02-23 16:33:22
+entity jpa --class ~.domain.security.AppRoleMenu --extends ~.base.BaseEntity --testAutomatically --inheritanceType TABLE_PER_CLASS
+field reference --fieldName appRole --type ~.domain.security.AppRole --cardinality MANY_TO_ONE --fetch LAZY --joinColumnName appRole
+field reference --fieldName appMenu --type ~.domain.security.AppMenu --cardinality MANY_TO_ONE --fetch LAZY --joinColumnName appMenu
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-02-23 16:33:40
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2559-02-23 16:33:47
+json all 
+json all --deepSerialize 
+web mvc all --package ~.web.security
+web mvc json all 
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-02-23 16:34:07
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2559-02-24 20:33:44
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-02-24 20:33:55
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2559-03-03 11:03:41
+// [failed] focus --class ~.domain
+focus --class ~.domain.security.AppMenu
+field string --fieldName menuIcon
+json all 
+json all --deepSerialize 
+web mvc all --package ~.web.security
+web mvc json all 
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-03-03 11:05:38
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2559-04-19 09:41:56
+entity jpa --class ~.domain.AppParameter --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically
+field string code --unique --notNull
+field string parameterDescription
+entity jpa --class ~.domain.ParameterDetail --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically
+field string code --unique --notNull
+field string parameterDescription
+field string parameterValue1
+field string parameterValue2
+field string parameterValue3
+field string parameterValue4
+field string parameterValue5
+field string parameterValue6
+// [failed] field string parameterValue7
+field string parameterValue8
+field string parameterValue9
+field string parameterValue10
+field reference --fieldName appParameter --type ~.domain.AppParameter --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName appParameter
+focus --class ~.domain.AppParameter
+field set --fieldName parameterDetails --type ~.domain.ParameterDetail --fetch EAGER --cardinality ONE_TO_MANY --mappedBy appParameter
+json all
+json all --deepSerialize
+web mvc all --package ~.web.security
+web mvc json all
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2559-04-19 09:44:54

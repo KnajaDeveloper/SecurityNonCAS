@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_app2_app2t_domain_security_AppRole" modelAttribute="appRole" path="/approles" render="${empty dependencies}" z="hCxoFk7/JvbYg9HFnoSqU2Sfrn4=">
+        <field:input field="createdBy" id="c_com_app2_app2t_domain_security_AppRole_createdBy" z="zoZaexr+vikucLiLe1MyP3qrFe4="/>
+        <field:input field="updatedBy" id="c_com_app2_app2t_domain_security_AppRole_updatedBy" z="IgvBTsVW4mDgnpq1DF5QBcWWOkE="/>
+        <field:input field="status" id="c_com_app2_app2t_domain_security_AppRole_status" z="Owsuqw5DA5Wnr3tIn0xe76s743E="/>
+        <field:datetime dateTimePattern="${appRole_createddate_date_format}" field="createdDate" id="c_com_app2_app2t_domain_security_AppRole_createdDate" z="B50zw25aq5yspuufXXWz83uWgKI="/>
+        <field:datetime dateTimePattern="${appRole_updateddate_date_format}" field="updatedDate" id="c_com_app2_app2t_domain_security_AppRole_updatedDate" z="qPll1+N4Vbl6awDFJ+MeBt+vjFM="/>
+        <field:input field="roleCode" id="c_com_app2_app2t_domain_security_AppRole_roleCode" max="15" z="dgP5JW9oPrxZcX4F/GHT1uC47cE="/>
+        <field:textarea field="roleName" id="c_com_app2_app2t_domain_security_AppRole_roleName" z="1RKBLJCmhAu4SUXs8/qNyly9Axo="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_app2_app2t_domain_security_AppRole" render="${not empty dependencies}" z="ztV4y3bBUNEIThJjCrN8zpwRkrk="/>
+</div>

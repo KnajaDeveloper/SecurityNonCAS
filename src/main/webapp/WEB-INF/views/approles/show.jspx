@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_app2_app2t_domain_security_AppRole" object="${approle}" path="/approles" z="WyeK1Ljneb1MSKBkL5bBKids7JE=">
+        <field:display field="createdBy" id="s_com_app2_app2t_domain_security_AppRole_createdBy" object="${approle}" z="L/5BxpUbl8td6KUJWckBi8nJhnM="/>
+        <field:display field="updatedBy" id="s_com_app2_app2t_domain_security_AppRole_updatedBy" object="${approle}" z="kM8+VyzXCSkgyYDTd1abog6Sdu4="/>
+        <field:display field="status" id="s_com_app2_app2t_domain_security_AppRole_status" object="${approle}" z="wUgolKsQB5m0kG6nXFpDInVrdzY="/>
+        <field:display date="true" dateTimePattern="${appRole_createddate_date_format}" field="createdDate" id="s_com_app2_app2t_domain_security_AppRole_createdDate" object="${approle}" z="wa1w94Nts8fYDis/MPbVeU+9W+s="/>
+        <field:display date="true" dateTimePattern="${appRole_updateddate_date_format}" field="updatedDate" id="s_com_app2_app2t_domain_security_AppRole_updatedDate" object="${approle}" z="fE9oQQQtNB4CtYuA6JvQRoh88zs="/>
+        <field:display field="roleCode" id="s_com_app2_app2t_domain_security_AppRole_roleCode" object="${approle}" z="r55ZobPWFpIiv/1HtMQulrn6CBc="/>
+        <field:display field="roleName" id="s_com_app2_app2t_domain_security_AppRole_roleName" object="${approle}" z="DgTgkeBmdE58GU7o7VnpIo9hVrU="/>
+    </page:show>
+</div>

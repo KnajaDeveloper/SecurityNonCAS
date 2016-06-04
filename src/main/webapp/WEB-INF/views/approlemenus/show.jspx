@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_app2_app2t_domain_security_AppRoleMenu" object="${approlemenu}" path="/approlemenus" z="zq6QTORhgWKS9yS/Fe+q/Nffu6w=">
+        <field:display field="createdBy" id="s_com_app2_app2t_domain_security_AppRoleMenu_createdBy" object="${approlemenu}" z="AbX/KfyunSLPJFW4X3De5BoLiK8="/>
+        <field:display field="updatedBy" id="s_com_app2_app2t_domain_security_AppRoleMenu_updatedBy" object="${approlemenu}" z="ruMrEUv6/7EZSKUfPStfhhAHMEw="/>
+        <field:display field="status" id="s_com_app2_app2t_domain_security_AppRoleMenu_status" object="${approlemenu}" z="4vE0yzwBpI6rFEUBLyoCbsnBpPo="/>
+        <field:display date="true" dateTimePattern="${appRoleMenu_createddate_date_format}" field="createdDate" id="s_com_app2_app2t_domain_security_AppRoleMenu_createdDate" object="${approlemenu}" z="d+6sEc2iYPwYj7GpYtfiEoE7h+E="/>
+        <field:display date="true" dateTimePattern="${appRoleMenu_updateddate_date_format}" field="updatedDate" id="s_com_app2_app2t_domain_security_AppRoleMenu_updatedDate" object="${approlemenu}" z="xMKXZ7ABq2pNgbbYXck6sp6xwFk="/>
+        <field:display field="appRole" id="s_com_app2_app2t_domain_security_AppRoleMenu_appRole" object="${approlemenu}" z="0G5blVT15bsAnDindRkx0UGbbh4="/>
+        <field:display field="appMenu" id="s_com_app2_app2t_domain_security_AppRoleMenu_appMenu" object="${approlemenu}" z="hh6NQP8h6S8YVKmTZL7P7d6Skbs="/>
+    </page:show>
+</div>
