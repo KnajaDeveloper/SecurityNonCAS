@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_app2_app2t_domain_security_AppMenu" object="${appmenu}" path="/appmenus" z="MA7vJQ+SEDauX9t+23VsGFN3j+c=">
+        <field:display field="createdBy" id="s_com_app2_app2t_domain_security_AppMenu_createdBy" object="${appmenu}" z="VU1jIwFUVFBVo3nJC6tOkv+/1gY="/>
+        <field:display field="updatedBy" id="s_com_app2_app2t_domain_security_AppMenu_updatedBy" object="${appmenu}" z="mJHiW9Y2dXV3TAkkhrCBVZ8v2e4="/>
+        <field:display field="status" id="s_com_app2_app2t_domain_security_AppMenu_status" object="${appmenu}" z="3OmbFeVhBqBFD3aYx+5E9+Sfk+E="/>
+        <field:display date="true" dateTimePattern="${appMenu_createddate_date_format}" field="createdDate" id="s_com_app2_app2t_domain_security_AppMenu_createdDate" object="${appmenu}" z="x7TDFLrlqAsRVqI4R9EnQF8m/Wk="/>
+        <field:display date="true" dateTimePattern="${appMenu_updateddate_date_format}" field="updatedDate" id="s_com_app2_app2t_domain_security_AppMenu_updatedDate" object="${appmenu}" z="R67UKDGtINcw1JtGTKpIWoyGOes="/>
+        <field:display field="link" id="s_com_app2_app2t_domain_security_AppMenu_link" object="${appmenu}" z="UNb9iuqjSxIT9ZQVUR0mnqHeUUM="/>
+        <field:display field="controller" id="s_com_app2_app2t_domain_security_AppMenu_controller" object="${appmenu}" z="T2B+jjmjvi+h7IasXf4lUGn5wHo="/>
+        <field:display field="menuLevel" id="s_com_app2_app2t_domain_security_AppMenu_menuLevel" object="${appmenu}" z="pBxDZLaODZEf9TVj/hG/HrAQBdU="/>
+        <field:display field="segment" id="s_com_app2_app2t_domain_security_AppMenu_segment" object="${appmenu}" z="vEZQRx02KsuI7nJxvwDnvJzXZg4="/>
+        <field:display field="parent" id="s_com_app2_app2t_domain_security_AppMenu_parent" object="${appmenu}" z="IcYqbOk0p6cwBrJFkZwNX5YoKtI="/>
+        <field:display field="menu_t_name" id="s_com_app2_app2t_domain_security_AppMenu_menu_t_name" object="${appmenu}" z="2H3+m8vtk9FWuC//MEDZn5SJXII="/>
+        <field:display field="menu_e_name" id="s_com_app2_app2t_domain_security_AppMenu_menu_e_name" object="${appmenu}" z="FEGz9fx4qrY/Gnr/nNwYGi4CgKE="/>
+        <field:display field="menuIcon" id="s_com_app2_app2t_domain_security_AppMenu_menuIcon" object="${appmenu}" z="NTwIs4kE9VJfseRDcf3/bVQtQTw="/>
+    </page:show>
+</div>
